@@ -8,7 +8,7 @@ class usuario {
     }
 
     getFullName(){
-        console.log(`El nombre del usuario es: ${this.nombre}.
+        console.log(`El nombre completo del usuario es: ${this.nombre} ${this.apellido}.
         `)
     }
 
@@ -20,6 +20,15 @@ class usuario {
         `)
     }
 
+    countMascotas(){
+        if (this.mascotas.length === 0){
+            console.log(`El usuario no tiene mascotas.
+            `)
+        }
+        console.log(`El usuario tiene ${this.mascotas.length} mascotas.
+        `)
+    }
+
     addBook(nombre, autor){
         const libro1 = {
             nombreLibro: nombre,
@@ -28,7 +37,7 @@ class usuario {
         this.libros.push(libro1)
     }
 
-    getBook(){
+    getBooks(){
         const booksNames = []
 
         for (let i = 0; i < this.libros.length; i++) {
@@ -44,14 +53,16 @@ class usuario {
     }
 }
 
-const usu1 = new usuario("Pedro", "Mondino", [], ["Paco", " Ciro", " Pampa"])
+const usu1 = new usuario("Pedro", "Mondino", [], ["Paco", "Ciro", "Pampa"])
 
 usu1.getFullName()
 
-usu1.addMascota(" Chape")
+usu1.addMascota("Chape")
+
+usu1.countMascotas()
 
 usu1.addBook("El Principito", "Antoine de Saint-Exupéry")
 
 usu1.addBook("Piter Pan", "James Matthew Barrie")
 
-usu1.getBook()
+usu1.getBooks()
