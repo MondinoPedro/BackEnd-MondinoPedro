@@ -5,6 +5,9 @@ const Contenedor = require("./contenedor");
 
 const contenedor = new Contenedor('./productos.txt')
 
+app.get('/', (req, res) => {
+    res.send("Visite /productos o /productoRandom")
+})
 
 app.get('/productos', (req, res) => {
     const data = contenedor.getAll()
