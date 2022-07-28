@@ -1,0 +1,23 @@
+[
+  {
+    "nombre": "Camisa Cuadrille Cuello Mas",
+    "precio": 3000,
+    "categoria": "Camisas",
+    "descripcion": "Camisa de algodon",
+    "id": 1
+  },
+  {
+    "nombre": "Camisa Cuadrille Cuello Mas",
+    "precio": 3000,
+    "categoria": "Camisas",
+    "descripcion": "Camisa de algodon",
+    "id": 2
+  },
+  {
+    "nombre": "Camisa Cuadrille Cuello Mas",
+    "precio": 3000,
+    "categoria": "Camisas",
+    "descripcion": "Camisa de algodon",
+    "id": 3
+  }
+]
