@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Remera lisa Aeropostale",
+    "price": "3400",
+    "thumbnail": "aeropostale.com/remeralisa",
+    "id": 1
+  },
+  {
+    "title": "Jean Recto Woman",
+    "price": "5600",
+    "thumbnail": "alfisjeans.com/jeanrectowoman",
+    "id": 2
+  },
+  {
+    "title": "Buzo Gap Man",
+    "price": 4300,
+    "thumbnail": "https://m.media-amazon.com/images/I/911xxUfpvWL._AC_UL1500_.jpg",
+    "id": 3
+  }
+]
