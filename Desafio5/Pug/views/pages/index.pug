@@ -1,0 +1,33 @@
+html 
+    head 
+        title="App con Pug"
+        head 
+            style. 
+                h1 {
+                    text-align: center;
+                    margin: 15px;
+                }
+
+                h3 {
+                    text-align: center;
+                    margin: 15px;
+                }
+
+                li {
+                    list-style: none;
+                    text-align: center;
+                    margin: 10px;
+                }
+    body    
+        if productoAgregado !== null
+            h1 Lista de Productos:
+            if productos.length > 0
+                ul 
+                    each produ, key in productos 
+                        li Nombre: #{produ.nombre} - Precio: $#{produ.precio} - Descripcion: #{produ.descripcion}
+            else 
+                h3 No hay productos en la lista!
+            include ../partials/listado.pug
+            
+        else 
+            include ../partials/form.pug
