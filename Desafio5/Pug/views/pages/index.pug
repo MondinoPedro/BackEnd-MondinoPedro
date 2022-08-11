@@ -1,0 +1,34 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Form Pug
+        style.
+
+            h1{
+                text-align: center;
+            }
+
+            h3{
+                text-align: center;
+            }
+
+            li{
+                list-style: none;
+                margin: 10px;
+                text-align: center;
+            }
+    body 
+        if productoAgregado 
+            h1 Lista de productos: 
+            if productos.length       
+                ul 
+                    each produ in productos 
+                        li Nombre: #{produ.nombre} - Precio: $#{produ.precio} - Descripcion: #{produ.descripcion}
+            else 
+                h3 No hay productos en la lista!
+            include ../partials/listado.pug
+        else 
+            include ../partials/form.pug
