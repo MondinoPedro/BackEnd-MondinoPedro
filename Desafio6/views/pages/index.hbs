@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/socket.io/socket.io.js"></script>
+    <title>Form HandleBars</title>
+</head>
+<body>
+     <style>
+            .input-container{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .input-container input{
+                height: 40px;
+                width: 300px;
+                text-align: center;
+                margin: 5px;
+            }
+              h1{
+                text-align: center;
+            }
+
+            h3{
+                text-align: center;
+            }
+
+            li{
+                list-style: none;
+                margin: 10px;
+                text-align: center;
+            }
+            
+            
+        </style>
+        <form  class="input-container" method="POST">
+            <input type="text" name="nombre" required placeholder="Ingrese el nombre del producto" />
+            <input type="number" name="precio" required placeholder="Ingrese el precio del producto" />
+            <input type="text" name="descripcion" required placeholder="Ingrese la descripcion del producto"/>
+            <input type="submit" value="Agregar producto"/>
+        </form>
+        <h1>Lista de Productos: </h1>
+        <ul>
+            {{#if productos.length}}
+                {{#each productos}}
+                    <li><b>Nombre:</b> {{this.nombre}} - <b>Precio:</b> ${{this.precio}} - <b>Descripcion:</b> {{this.descripcion}}</li>
+                {{/each}}
+            
+        </ul>
+        {{else}}
+            <h3>No hay productos en la lista! </h3>
+        {{/if}}
+        <script src="../public/index.js"></script>
+</body>
+</html>
