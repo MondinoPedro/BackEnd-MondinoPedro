@@ -1,0 +1,36 @@
+[
+  {
+    "id": 1,
+    "timestamp": "1.662.216.454.927",
+    "productos": []
+  },
+  {
+    "id": 2,
+    "timestamp": "1.662.216.547.000",
+    "productos": [
+      {
+        "title": "Buzo Gap Man",
+        "price": 13232,
+        "thumbnail": "https://m.media-amazon.com/images/I/911xxUfpvWL._AC_UL1500_.jpg",
+        "stock": 12,
+        "code": "t4343t",
+        "timestamp": "1.662.152.395.253",
+        "id": 4
+      },
+      {
+        "title": "Buzo Gap Man",
+        "price": 13232,
+        "thumbnail": "https://m.media-amazon.com/images/I/911xxUfpvWL._AC_UL1500_.jpg",
+        "stock": 12,
+        "code": "t4343t",
+        "timestamp": "1.662.152.416.980",
+        "id": 5
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "timestamp": "1.662.216.553.317",
+    "productos": []
+  }
+]
