@@ -16,13 +16,14 @@ app.engine(
         extname: '.hbs',
         defaultLayout: 'index.hbs',
         layoutsDir: __dirname + '/views/pages',
-        partialsDir:__dirname + '/views/partials'
+        partialsDir:__dirname + '/views/partials',
+        
     })
 )
 
 app.use(express.json())
 app.use(express.urlencoded({ extended : true }))
-app.use(express.static('public'))
+app.use(express.static('/views/public'))
 
 app.set('view engine', 'hbs')
 app.set('views', './views')
@@ -30,23 +31,16 @@ app.set('views', './views')
 let productos = []
 
 app.get('/', (req,res)=>{
-    res.render('pages/index', {productoAgregado: null})
+    res.render('pages/index', {productos: productos})
     
 })
 
 app.post('/', (req,res)=>{
     const {nombre, precio, descripcion} = req.body
     productos.push({'nombre': nombre, 'precio': precio, 'descripcion': descripcion})
-    res.redirect('/productos')
-})
-
-app.get('/productos', (req,res)=> {
-    res.render('pages/index', {productos:productos, productoAgregado: true})
-})
-
-app.post('/productos', (req,res)=>{
     res.redirect('/')
 })
+
 
 io.on('connect', (socket)=>{
     console.log('Usuario conectado...')
