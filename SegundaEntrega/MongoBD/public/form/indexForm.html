@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My App</title>
+        <style>
+            div{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                padding: 20px
+                
+            }
+            .input-container{
+                text-align: center;
+                width: 400px;
+                height: 450px;
+                margin: auto;
+                background-color: #000;
+                color: #fff;
+            }
+
+            .input-container input{
+                height: 30px;
+                width: 70%;
+                text-align: center;
+                margin: 10px;
+                
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div>
+            
+            <form  class="input-container" method="POST">
+                <h2>Agregar Producto</h2>
+                <input type="text" name="name" placeholder="Ingrese el nombre del producto"/>
+                <input type="number" name="price" placeholder="Ingrese el precio del producto"/>
+                <input type="url" name="thumbnail" placeholder="Ingrese la url de la imagen del producto"/>
+                <input type="text" name="code" placeholder="Ingrese el codigo del producto"/>
+                <input type="number" name="stock" placeholder="Ingrese el stock del producto"/>
+                <input type="submit" value="Agregar producto"/>
+            </form>
+        </div>
+        
+    </body>
+</html>

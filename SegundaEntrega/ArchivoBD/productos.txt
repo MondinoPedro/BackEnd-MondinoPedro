@@ -1,0 +1,29 @@
+[
+  {
+    "title": "Pedro Mondino",
+    "price": 98798,
+    "thumbnail": "https://m.media-amazon.com/images/I/911xxUfpvWL._AC_UL1500_.jpg",
+    "stock": 9,
+    "code": "S7JR-WF1SH-Y79V",
+    "timestamp": "1.662.143.461.580",
+    "id": 2
+  },
+  {
+    "title": "Buzo Gap Man",
+    "price": 13232,
+    "thumbnail": "https://m.media-amazon.com/images/I/911xxUfpvWL._AC_UL1500_.jpg",
+    "stock": 12,
+    "code": "t4343t",
+    "timestamp": "1.662.152.395.253",
+    "id": 4
+  },
+  {
+    "title": "Buzo Gap Man",
+    "price": 13232,
+    "thumbnail": "https://m.media-amazon.com/images/I/911xxUfpvWL._AC_UL1500_.jpg",
+    "stock": 12,
+    "code": "t4343t",
+    "timestamp": "1.662.152.416.980",
+    "id": 5
+  }
+]
